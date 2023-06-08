@@ -1,4 +1,91 @@
 .sidebar {
   flex: 1;
-  background-color: lightcoral;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  min-height: 100vh;
+  background-color: #fff;
+
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #6439ff;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 227, 227);
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .title {
+      font-size: 10px;
+      font-weight: bold;
+      color: #999;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ece8ff;
+      }
+
+      .icon {
+        font-size: 20px;
+        color: #7451f8;
+      }
+
+      span {
+        font-size: 13px;
+        font-weight: 600;
+        color: #999;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    .colorOptions {
+      height: 20px;
+      width: 20px;
+      border-radius: 5px;
+      border: 1px solid #6439ff;
+      margin: 5px;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background-color: whitesmoke;
+      }
+
+      &:nth-child(2) {
+        background-color: #333;
+      }
+
+      &:nth-child(3) {
+        background-color: darkblue;
+      }
+    }
+  }
 }
