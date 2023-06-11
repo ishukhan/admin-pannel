@@ -4,7 +4,8 @@
   .homeContainer {
     flex: 6;
 
-    .widgets {
+    .widgets,
+    .charts {
       padding: 20px;
       display: flex;
       gap: 20px;
