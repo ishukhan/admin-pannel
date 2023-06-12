@@ -10,12 +10,12 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "Jan", Total: "12000" },
-  { name: "Feb", Total: "20000" },
-  { name: "Mar", Total: "82000" },
-  { name: "Apr", Total: "100000" },
-  { name: "May", Total: "16000" },
-  { name: "Jun", Total: "30000" },
+  { name: "Jan", Total: "500" },
+  { name: "Feb", Total: "8000" },
+  { name: "Mar", Total: "2300" },
+  { name: "Apr", Total: "2600" },
+  { name: "May", Total: "1100" },
+  { name: "Jun", Total: "2600" },
 ];
 
 const Chart = () => {
@@ -35,8 +35,7 @@ const Chart = () => {
               <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
             </linearGradient>
           </defs>
-          <XAxis dataKey="name" />
-          <YAxis />
+          <XAxis dataKey="name" color="grey" />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           <Area
