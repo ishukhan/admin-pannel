@@ -4,5 +4,82 @@
 
   .singleContainer {
     flex: 6;
+
+    .top {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .left {
+        flex: 1;
+        box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        position: relative;
+
+        .editButton {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: rgb(215, 215, 243);
+          padding: 4px;
+          color: rgba(0, 0, 139, 0.733);
+          border-radius: 5px;
+          font-size: 12px;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .item {
+          display: flex;
+          gap: 20px;
+
+          .itemImg {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
+          }
+
+          .deatil {
+            .itemTitle {
+              margin-top: 10px;
+              color: #555;
+            }
+            .detailItem {
+              margin-top: 10px;
+              font-size: 14px;
+              color: grey;
+
+              .itemKey {
+                font-weight: 500;
+                margin-right: 5px;
+              }
+              .itemValue {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        flex: 2;
+      }
+    }
+    .bottom {
+      box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 10px 20px;
+    }
+
+    .title {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: grey;
+    }
   }
 }
