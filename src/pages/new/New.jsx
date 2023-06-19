@@ -17,9 +17,12 @@ const New = ({ inputs, title }) => {
         <div className="bottom">
           <div className="left">
             <img
-              src="https://i.ibb.co/SvWhFN4/no-image-icon-0.jpg"
+              src={
+                file
+                  ? URL.createObjectURL(file)
+                  : "https://i.ibb.co/SvWhFN4/no-image-icon-0.jpg"
+              }
               alt="addimg"
-              onChange={(e) => setFile(e.target.files[0])}
               className="image"
             />
           </div>
@@ -29,7 +32,12 @@ const New = ({ inputs, title }) => {
                 <label htmlFor="file">
                   Image: <DriveFolderUploadOutlined className="icon" />
                 </label>
-                <input type="file" id="file" hidden />
+                <input
+                  type="file"
+                  onChange={(e) => setFile(e.target.files[0])}
+                  id="file"
+                  hidden
+                />
               </div>
               {inputs.map((input) => (
                 <div className="formInput" key={input.id}>
