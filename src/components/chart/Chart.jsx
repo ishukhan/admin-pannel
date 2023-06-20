@@ -36,7 +36,7 @@ const Chart = ({ aspect, title }) => {
             </linearGradient>
           </defs>
           <XAxis dataKey="name" color="grey" />
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="3 3" className="chartGrid" />
           <Tooltip />
           <Area
             type="monotone"
